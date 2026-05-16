@@ -2,7 +2,7 @@
 
 > Currículo digital moderno e interativo desenvolvido com HTML, CSS e JavaScript puro, hospedado via GitHub Pages.
 
-🔗 **[Acesse o site ao vivo](https://seu-usuario.github.io/curriculo-isabela)**
+🔗 **[Acesse o site ao vivo](https://iuryfso.github.io/Curr-culo-digital-Modelo-2/)**
 
 ---
 
@@ -73,10 +73,3 @@ O projeto é publicado automaticamente no **GitHub Pages** a cada `push` na bran
 Para publicar manualmente, acesse a aba **Actions** no GitHub e clique em **"Run workflow"**.
 
 ---
-
-## 📬 Contato
-
-**Isabela Domingues Silva**
-- 📍 Americana - SP, CEP 13470-498
-- 📞 (19) 99123-3807
-- 📧 [isabela120305@gmail.com](mailto:isabela120305@gmail.com)
