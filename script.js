@@ -1,4 +1,5 @@
 const revealElements = document.querySelectorAll('.reveal');
+const profileCard = document.querySelector('.profile-card');
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -14,15 +15,11 @@ const observer = new IntersectionObserver(
 
 revealElements.forEach((element) => observer.observe(element));
 
-window.addEventListener('mousemove', (event) => {
-  const x = (event.clientX / window.innerWidth - 0.5) * 18;
-  const y = (event.clientY / window.innerHeight - 0.5) * 18;
+if (profileCard && window.matchMedia('(pointer: fine)').matches) {
+  window.addEventListener('mousemove', (event) => {
+    const x = (event.clientX / window.innerWidth - 0.5) * 10;
+    const y = (event.clientY / window.innerHeight - 0.5) * 10;
 
-  document.documentElement.style.setProperty('--mouse-x', `${x}px`);
-  document.documentElement.style.setProperty('--mouse-y', `${y}px`);
-
-  const card = document.querySelector('.profile-card');
-  if (card) {
-    card.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
-  }
-});
+    profileCard.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  });
+}
